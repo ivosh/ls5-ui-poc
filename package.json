@@ -11,15 +11,22 @@
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
-    "prettier": "prettier --write \"src/**/*.{ts,tsx,json,css}\""
+    "prettier": "prettier --write \"src/**/*.{ts,tsx,json,css}\"",
+    "lint": "eslint \"src/**/*.{ts,tsx}\" --ignore-pattern src/registerServiceWorker.ts"
   },
   "devDependencies": {
     "@types/jest": "^23.3.10",
     "@types/node": "^10.12.18",
     "@types/react": "^16.7.18",
     "@types/react-dom": "^16.0.11",
+    "eslint": "^5.11.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-jasmine": "^2.10.1",
+    "eslint-plugin-react": "^7.12.0",
+    "eslint-plugin-typescript": "^0.14.0",
     "prettier": "^1.15.3",
-    "typescript": "^3.2.2"
+    "typescript": "^3.1.1",
+    "typescript-eslint-parser": "^21.0.2"
   },
   "browserslist": [
     ">0.2%",
