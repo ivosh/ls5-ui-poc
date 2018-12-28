@@ -11,6 +11,7 @@
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
+    "test:bash": "winpty node.cmd ./node_modules/react-scripts-ts/bin/react-scripts-ts.js test --env=jsdom",
     "prettier": "prettier --write \"src/**/*.{ts,tsx,json,css}\"",
     "lint": "eslint \"src/**/*.{ts,tsx}\" --ignore-pattern src/registerServiceWorker.ts"
   },
