@@ -1,17 +1,21 @@
 {
   "env": {
-    "jasmine": true
+    "es6": true,
+    "jasmine": true,
+    "node": true
   },
   "parser": "typescript-eslint-parser",
-  "plugins": [ "typescript", "jasmine", "react" ],
-  "extends": [ "eslint:recommended",
-               "airbnb-base",
-               "plugin:jasmine/recommended",
-               "plugin:react/recommended" ],
+  "plugins": ["typescript", "jasmine", "react"],
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base",
+    "plugin:jasmine/recommended",
+    "plugin:react/recommended"
+  ],
   "settings": {
     "import/resolver": {
       "node": {
-        "extensions": [ ".ts", ".tsx" ]
+        "extensions": [".ts", ".tsx"]
       }
     },
     "react": { "version": "16.7" }

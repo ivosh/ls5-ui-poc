@@ -1,0 +1,12 @@
+[
+  {
+    "id": "app.home.greeting",
+    "description": "Message to greet users.",
+    "defaultMessage": "Welcome to {name}!"
+  },
+  {
+    "id": "app.home.intro",
+    "description": "Instructions how to get started.",
+    "defaultMessage": "To get started, edit {filename} and save to reload."
+  }
+]

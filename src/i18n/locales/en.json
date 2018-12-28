@@ -1,0 +1,4 @@
+{
+  "app.home.greeting": "Welcome to {name}!",
+  "app.home.intro": "To get started, edit {filename} and save to reload."
+}

@@ -1,0 +1,4 @@
+{
+  "app.home.greeting": "{name} tě vítá!",
+  "app.home.intro": "Začni s editací souboru {filename} a ulož jej; aplikace se sama načte."
+}
