@@ -19,6 +19,10 @@ const messages = defineMessages({
 const App = () => (
   <div className="App">
     <header className="App-header">
+      <div className="App-languages">
+        <a href="/?locale=cs">česky</a>
+        <a href="/?locale=en">English</a>
+      </div>
       <img src={logo} className="App-logo" alt="logo" />
       <h1 className="App-title">
         <FormattedMessage {...messages.greeting} values={{ name: 'React' }} />

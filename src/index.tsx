@@ -5,7 +5,7 @@ import * as csLocaleData from 'react-intl/locale-data/cs';
 import * as enLocaleData from 'react-intl/locale-data/en';
 
 import App from './App';
-import * as translations from './i18n/locales';
+import translations from './i18n/locales';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 
