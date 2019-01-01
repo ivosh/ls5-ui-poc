@@ -26,5 +26,8 @@
     "localStorage": true,
     "URL": true,
     "window": true
+  },
+  "rules": {
+    "linebreak-style": ["error", "windows"]
   }
 }
