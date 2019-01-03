@@ -1,27 +1,27 @@
-.AppForm > div {
+.PersonalForm > div {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1ex;
 }
 
-.AppForm > div > label {
+.PersonalForm > div > label {
   margin-right: 1em;
   min-width: 10em;
   text-align: right;
 }
 
-.AppForm > div > div {
+.PersonalForm > div > div {
   max-width: 15em;
 }
 
-.AppForm > div > div > * {
+.PersonalForm > div > div > * {
   border: 2px solid #12630b;
   font-size: 16px;
   padding: 5px 8px 5px 8px;
 }
 
-.AppForm > div > button {
+.PersonalForm > div > button {
   border-radius: 5px;
   cursor: pointer;
   font-size: 20px;
@@ -29,18 +29,18 @@
   padding: 10px 15px 10px 15px;
 }
 
-.AppForm > div > button:disabled {
+.PersonalForm > div > button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
 }
 
-.AppForm > div > button[type='submit'] {
+.PersonalForm > div > button[type='submit'] {
   background-image: linear-gradient(#138d1d, #063802);
   border: 1px solid #063802;
   color: #ffffff;
 }
 
-.AppForm > div > button[type='button'] {
+.PersonalForm > div > button[type='button'] {
   background-image: linear-gradient(#ffffff, #d5d5d5);
   border: 1px solid #d5d5d5;
   color: #000000;

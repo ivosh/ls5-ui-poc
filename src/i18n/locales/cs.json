@@ -1,12 +1,12 @@
 {
-  "app.form.first.label": "Jméno",
-  "app.form.first.placeholder": "Jméno",
-  "app.form.last.label": "Příjmení",
-  "app.form.last.placeholder": "Příjmení",
-  "app.form.reset": "Vymaž formulář",
-  "app.form.salary.label": "Roční mzda",
-  "app.form.salary.placeholder": "Roční mzda v dolarech",
-  "app.form.submit": "Odešli",
   "app.home.greeting": "{name} tě vítá!",
-  "app.home.intro": "Začni s editací souboru {filename} a ulož jej; aplikace se sama načte."
+  "app.home.intro": "Začni s editací souboru {filename} a ulož jej; aplikace se sama načte.",
+  "form.personal.first.label": "Jméno",
+  "form.personal.first.placeholder": "Jméno",
+  "form.personal.last.label": "Příjmení",
+  "form.personal.last.placeholder": "Příjmení",
+  "form.personal.reset": "Vymaž formulář",
+  "form.personal.salary.label": "Roční mzda",
+  "form.personal.salary.placeholder": "Roční mzda v dolarech",
+  "form.personal.submit": "Odešli"
 }

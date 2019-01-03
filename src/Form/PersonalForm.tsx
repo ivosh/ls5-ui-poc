@@ -1,62 +1,62 @@
 import * as React from 'react';
 import { defineMessages, FormattedMessage } from 'react-intl';
 import { Field, InjectedFormProps, reduxForm } from 'redux-form';
-import './AppForm.css';
+import './PersonalForm.css';
 
 const messages = defineMessages({
   firstLabel: {
-    id: 'app.form.first.label',
+    id: 'form.personal.first.label',
     description: 'Name of the "first name" label.',
     defaultMessage: 'First Name'
   },
   firstPlaceholder: {
-    id: 'app.form.first.placeholder',
+    id: 'form.personal.first.placeholder',
     description: 'Placeholder text of the "first name" input field.',
     defaultMessage: 'First name'
   },
   lastLabel: {
-    id: 'app.form.last.label',
+    id: 'form.personal.last.label',
     description: 'Name of the "last name" label.',
     defaultMessage: 'Last Name'
   },
   lastPlaceholder: {
-    id: 'app.form.last.placeholder',
+    id: 'form.personal.last.placeholder',
     description: 'Placeholder text of the "last name" input field.',
     defaultMessage: 'Last name'
   },
   salaryLabel: {
-    id: 'app.form.salary.label',
+    id: 'form.personal.salary.label',
     description: 'Name of the "Annual Salary" label.',
     defaultMessage: 'Annual Salary'
   },
   salaryPlaceholder: {
-    id: 'app.form.salary.placeholder',
+    id: 'form.personal.salary.placeholder',
     description: 'Placeholder text of the "Annual Salary" input field.',
     defaultMessage: 'Annual salary in dollars'
   },
   reset: {
-    id: 'app.form.reset',
+    id: 'form.personal.reset',
     description: 'Name of the "Reset" button.',
     defaultMessage: 'Clear Values'
   },
   submit: {
-    id: 'app.form.submit',
+    id: 'form.personal.submit',
     description: 'Name of the "Submit" button.',
     defaultMessage: 'Submit'
   }
 });
 
-export interface IAppFormData {
+export interface IPersonalFormData {
   last: string;
   first: string;
   age: number;
   email: string;
 }
 
-const AppForm = (props: InjectedFormProps<IAppFormData>) => {
+const PersonalForm = (props: InjectedFormProps<IPersonalFormData>) => {
   const { pristine, submitting, reset, handleSubmit } = props;
   return (
-    <form className="AppForm" onSubmit={handleSubmit}>
+    <form className="PersonalForm" onSubmit={handleSubmit}>
       <div>
         <FormattedMessage {...messages.firstLabel} tagName="label" />
         <div>
@@ -104,4 +104,4 @@ const AppForm = (props: InjectedFormProps<IAppFormData>) => {
   );
 };
 
-export default reduxForm<IAppFormData>({ form: 'AppForm' })(AppForm);
+export default reduxForm<IPersonalFormData>({ form: 'personal' })(PersonalForm);

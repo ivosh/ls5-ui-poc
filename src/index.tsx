@@ -5,11 +5,11 @@ import * as csLocaleData from 'react-intl/locale-data/cs';
 import * as enLocaleData from 'react-intl/locale-data/en';
 import { Provider } from 'react-redux';
 
-import App from './App';
+import App from './App/App';
 import translations from './i18n/locales';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
-import store from './store';
+import store from './store/store';
 
 addLocaleData(csLocaleData);
 addLocaleData(enLocaleData);
