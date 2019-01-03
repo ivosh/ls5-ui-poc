@@ -10,12 +10,13 @@
     "eslint:recommended",
     "airbnb-base",
     "plugin:jasmine/recommended",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "prettier"
   ],
   "settings": {
     "import/resolver": {
       "node": {
-        "extensions": [".ts", ".tsx"]
+        "extensions": [".js", ".ts", ".tsx"]
       }
     },
     "react": { "version": "16.7" }
