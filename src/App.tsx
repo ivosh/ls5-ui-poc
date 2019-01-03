@@ -26,9 +26,9 @@ const App = () => (
         <a href="/?locale=en">English</a>
       </div>
       <img src={logo} className="App-logo" alt="logo" />
-      <h1 className="App-title">
-        <FormattedMessage {...messages.greeting} values={{ name: 'React' }} />
-      </h1>
+      <FormattedMessage {...messages.greeting} values={{ name: 'React' }}>
+        {message => <h1 className="App-title">{message}</h1>}
+      </FormattedMessage>
     </header>
     <p className="App-intro">
       <FormattedMessage {...messages.intro} values={{ filename: <code>src/App.tsx</code> }} />
