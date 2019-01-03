@@ -1,4 +1,12 @@
 {
+  "app.form.first.label": "Jméno",
+  "app.form.first.placeholder": "Jméno",
+  "app.form.last.label": "Příjmení",
+  "app.form.last.placeholder": "Příjmení",
+  "app.form.reset": "Vymaž formulář",
+  "app.form.salary.label": "Roční mzda",
+  "app.form.salary.placeholder": "Roční mzda v dolarech",
+  "app.form.submit": "Odešli",
   "app.home.greeting": "{name} tě vítá!",
   "app.home.intro": "Začni s editací souboru {filename} a ulož jej; aplikace se sama načte."
 }

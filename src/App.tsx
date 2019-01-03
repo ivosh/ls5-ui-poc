@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { defineMessages, FormattedMessage } from 'react-intl';
+
 import './App.css';
+import AppForm from './AppForm';
 import logo from './logo.svg';
 
 const messages = defineMessages({
@@ -31,6 +33,7 @@ const App = () => (
     <p className="App-intro">
       <FormattedMessage {...messages.intro} values={{ filename: <code>src/App.tsx</code> }} />
     </p>
+    <AppForm />
   </div>
 );
 

@@ -1,4 +1,12 @@
 {
+  "app.form.first.label": "First Name",
+  "app.form.first.placeholder": "First name",
+  "app.form.last.label": "Last Name",
+  "app.form.last.placeholder": "Last name",
+  "app.form.reset": "Clear Values",
+  "app.form.salary.label": "Annual Salary",
+  "app.form.salary.placeholder": "Annual salary in dollars",
+  "app.form.submit": "Submit",
   "app.home.greeting": "Welcome to {name}!",
   "app.home.intro": "To get started, edit {filename} and save to reload."
 }
