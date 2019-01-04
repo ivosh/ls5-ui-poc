@@ -30,6 +30,11 @@
   },
   "rules": {
     "comma-dangle": ["error", "never"],
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["**/*.test.ts", "**/*.test.tsx"] }
+    ],
+    "jasmine/new-line-before-expect": 0,
     "linebreak-style": ["error", "windows"],
     "typescript/no-unused-vars": "error"
   }
