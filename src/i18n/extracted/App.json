@@ -7,6 +7,16 @@
   {
     "id": "app.home.intro",
     "description": "Instructions how to get started.",
-    "defaultMessage": "To get started, edit {filename} and save to reload."
+    "defaultMessage": "Choose whether to start filling out a fresh new form or load values from a previously saved one."
+  },
+  {
+    "id": "app.home.emptyForm",
+    "description": "Start with an empty form.",
+    "defaultMessage": "Empty Form"
+  },
+  {
+    "id": "app.home.loadForm",
+    "description": "Start with a form loaded with some initial values.",
+    "defaultMessage": "Load Form"
   }
 ]

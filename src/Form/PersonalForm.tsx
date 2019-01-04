@@ -91,7 +91,7 @@ const PersonalForm = (props: InjectedFormProps<IPersonalFormData>) => {
         <FormattedMessage {...messages.submit}>
           {message => (
             <button type="submit" disabled={pristine || submitting}>
-              {message}{' '}
+              {message}
             </button>
           )}
         </FormattedMessage>

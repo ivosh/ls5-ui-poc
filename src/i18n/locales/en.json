@@ -1,6 +1,8 @@
 {
+  "app.home.emptyForm": "Empty Form",
   "app.home.greeting": "Welcome to {name}!",
   "app.home.intro": "To get started, edit {filename} and save to reload.",
+  "app.home.loadForm": "Load Form",
   "form.personal.first.label": "First Name",
   "form.personal.first.placeholder": "First name",
   "form.personal.last.label": "Last Name",

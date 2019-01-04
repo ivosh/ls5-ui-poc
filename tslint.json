@@ -10,5 +10,5 @@
       "**/*.json"
     ]
   },
-  "rules": { "object-literal-sort-keys": false }
+  "rules": { "jsx-no-lambda": false, "object-literal-sort-keys": false }
 }

@@ -1,6 +1,8 @@
 {
+  "app.home.emptyForm": "Prázdný formulář",
   "app.home.greeting": "{name} tě vítá!",
-  "app.home.intro": "Začni s editací souboru {filename} a ulož jej; aplikace se sama načte.",
+  "app.home.intro": "Vyber si, zda chceš začít pracovat s prázdným formulářem nebo do něj načíst uložená data.",
+  "app.home.loadForm": "Načti formulář",
   "form.personal.first.label": "Jméno",
   "form.personal.first.placeholder": "Jméno",
   "form.personal.last.label": "Příjmení",

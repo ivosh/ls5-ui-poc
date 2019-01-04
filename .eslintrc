@@ -36,6 +36,7 @@
     ],
     "jasmine/new-line-before-expect": 0,
     "linebreak-style": ["error", "windows"],
+    "--no-unused-vars--": "will be fixed in eslint-plugin-typescript 1.0.0",
     "typescript/no-unused-vars": "error"
   }
 }
