@@ -10,5 +10,6 @@
   "form.personal.reset": "Vymaž formulář",
   "form.personal.salary.label": "Roční mzda",
   "form.personal.salary.placeholder": "Roční mzda v dolarech",
-  "form.personal.submit": "Odešli"
+  "form.personal.submit": "Odešli",
+  "form.personal.undo": "Zahoď změny"
 }

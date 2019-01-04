@@ -30,7 +30,7 @@
 }
 
 .PersonalForm > div > button:disabled {
-  opacity: 0.6;
+  opacity: 0.4;
   cursor: not-allowed;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .PersonalForm > div > button[type='button'] {
-  background-image: linear-gradient(#ffffff, #d5d5d5);
+  background-image: linear-gradient(#ffffff, #c0c0c0);
   border: 1px solid #d5d5d5;
   color: #000000;
 }

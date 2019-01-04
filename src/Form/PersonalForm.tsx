@@ -43,18 +43,27 @@ const messages = defineMessages({
     id: 'form.personal.submit',
     description: 'Name of the "Submit" button.',
     defaultMessage: 'Submit'
+  },
+  undo: {
+    id: 'form.personal.undo',
+    description: 'Name of the "Undo Changes" button.',
+    defaultMessage: 'Undo Changes'
   }
 });
 
 export interface IPersonalFormData {
   last: string;
   first: string;
-  age: number;
   email: string;
+  salary: number;
 }
 
-const PersonalForm = (props: InjectedFormProps<IPersonalFormData>) => {
-  const { pristine, submitting, reset, handleSubmit } = props;
+export interface IPersonalFormProps {
+  empty: boolean;
+}
+
+const PersonalForm = (props: InjectedFormProps<IPersonalFormData> & IPersonalFormProps) => {
+  const { empty, pristine, submitting, reset, handleSubmit } = props;
   return (
     <form className="PersonalForm" onSubmit={handleSubmit}>
       <div>
@@ -97,11 +106,11 @@ const PersonalForm = (props: InjectedFormProps<IPersonalFormData>) => {
         </FormattedMessage>
 
         <button type="button" disabled={pristine || submitting} onClick={reset}>
-          <FormattedMessage {...messages.reset} />
+          <FormattedMessage {...messages[empty ? 'reset' : 'undo']} />
         </button>
       </div>
     </form>
   );
 };
 
-export default reduxForm<IPersonalFormData>({ form: 'personal' })(PersonalForm);
+export default reduxForm<IPersonalFormData, IPersonalFormProps>({ form: 'personal' })(PersonalForm);

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { defineMessages, FormattedMessage } from 'react-intl';
 
-import PersonalForm from '../Form/PersonalForm';
+import PersonalForm, { IPersonalFormData } from '../Form/PersonalForm';
 import './App.css';
 import logo from './logo.svg';
 
@@ -29,6 +29,13 @@ const messages = defineMessages({
   }
 });
 
+const initialValues: IPersonalFormData = {
+  last: 'Doe',
+  first: 'John',
+  email: 'john.doe@gemalto.com',
+  salary: 99854
+};
+
 enum Showing {
   Buttons,
   EmptyForm,
@@ -37,6 +44,7 @@ enum Showing {
 
 const App = () => {
   const [showing, setShowing] = useState(Showing.Buttons);
+
   return (
     <div className="App">
       <header className="App__header">
@@ -73,7 +81,10 @@ const App = () => {
             </div>
           </React.Fragment>
         )}
-        {showing === Showing.EmptyForm && <PersonalForm />}
+        {showing === Showing.EmptyForm && <PersonalForm empty={true} />}
+        {showing === Showing.LoadedForm && (
+          <PersonalForm empty={false} initialValues={initialValues} />
+        )}
       </main>
     </div>
   );

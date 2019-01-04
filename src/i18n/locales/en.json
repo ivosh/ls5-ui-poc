@@ -10,5 +10,6 @@
   "form.personal.reset": "Clear Values",
   "form.personal.salary.label": "Annual Salary",
   "form.personal.salary.placeholder": "Annual salary in dollars",
-  "form.personal.submit": "Submit"
+  "form.personal.submit": "Submit",
+  "form.personal.undo": "Undo Changes"
 }

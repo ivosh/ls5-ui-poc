@@ -38,5 +38,10 @@
     "id": "form.personal.submit",
     "description": "Name of the \"Submit\" button.",
     "defaultMessage": "Submit"
+  },
+  {
+    "id": "form.personal.undo",
+    "description": "Name of the \"Undo Changes\" button.",
+    "defaultMessage": "Undo Changes"
   }
 ]
