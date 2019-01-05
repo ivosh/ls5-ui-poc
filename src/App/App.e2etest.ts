@@ -27,11 +27,16 @@ beforeEach(async () => {
   await page.goto('http://localhost:3000/');
 });
 
-afterAll(async () => {
+afterEach(async () => {
   await page.close();
 });
 
 it('Application title loads correctly', async () => {
   const h1 = await expect(page).toMatchElement('h1');
-  await expect(h1).toMatch('Welcome to React!');
+  await expect(h1).toMatch('Welcome to LiveScan 5 UI proof of concept!');
+});
+
+it('Application page contains two buttons', async () => {
+  await expect(page).toMatchElement('button', { text: 'Empty Form' });
+  await expect(page).toMatchElement('button', { text: 'Load Form' });
 });

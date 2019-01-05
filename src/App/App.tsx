@@ -9,7 +9,7 @@ const messages = defineMessages({
   greeting: {
     id: 'app.home.greeting',
     description: 'Message to greet users.',
-    defaultMessage: 'Welcome to {name}!'
+    defaultMessage: 'Welcome to {name} proof of concept!'
   },
   intro: {
     id: 'app.home.intro',
@@ -53,7 +53,7 @@ const App = () => {
           <a href="/?locale=en">English</a>
         </div>
         <img src={logo} className="App__logo" alt="logo" />
-        <FormattedMessage {...messages.greeting} values={{ name: 'React' }}>
+        <FormattedMessage {...messages.greeting} values={{ name: 'LiveScan 5 UI' }}>
           {message => <h1 className="App__title">{message}</h1>}
         </FormattedMessage>
       </header>
